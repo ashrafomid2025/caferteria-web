@@ -1,0 +1,6 @@
+@import "tailwindcss";
+/* @import url("../assets/Kalam/Kalam-Regular.ttf"); */
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+@theme {
+  --font-kalam-regular: "Kalam", cursive;
+}

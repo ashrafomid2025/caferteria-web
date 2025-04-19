@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script
+      src="https://kit.fontawesome.com/409fdf9367.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="slider.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body>
+    <div class="font-kalam-regular">
+      <!-- navbar start -->
+
+      <!-- navbar end -->
+      <div
+        id="hero"
+        class="h-screen static bg-cover -z-10 w-full bg-[url(../assets/images/slide1.jpg)]"
+      >
+        <div
+          class="sticky top-0 bg-transparent flex justify-between z-40 p-3.5"
+        >
+          <div>
+            <img src="../assets/images/logo.png" alt="" />
+          </div>
+          <ul class="flex space-x-7 items-center uppercase">
+            <li><a href="">Home</a></li>
+            <li><a href="home.html#about-us">About Us</a></li>
+            <li class="relative group">
+              <a
+                href=""
+                class="before:content-[''] relative before:border-black before:absolute before:z-50 before:top-[10px] before:right-[-20px] before:h-[10px] before:w-[10px] before:border-b-2 before:border-l-2 before:rotate-[315deg] before:translate-[-50%]"
+                >Blog
+              </a>
+              <ul
+                class="min-w-[160px] absolute top-[18px] bg-white leading-14 px-3 hidden group-hover:block"
+              >
+                <li class="hover:bg-gray-300 block"><a href="">Latest</a></li>
+                <li class="hover:bg-gray-300 block"><a href="">Oldest</a></li>
+              </ul>
+            </li>
+            <li class="relative group">
+              <a
+                href=""
+                class="before:content-[''] relative before:border-black before:absolute before:z-50 before:top-[10px] before:right-[-20px] before:h-[10px] before:w-[10px] before:border-b-2 before:border-l-2 before:rotate-[315deg] before:translate-[-50%]"
+                >Menu</a
+              >
+              <ul
+                class="min-w-[160px] absolute top-[18px] bg-white leading-14 hidden group-hover:block"
+              >
+                <li class="hover:bg-gray-300 block px-3">
+                  <a href="">Late</a>
+                </li>
+                <li class="hover:bg-gray-300 block px-3">
+                  <a href="">Expresso</a>
+                </li>
+                <li class="hover:bg-gray-300 block px-3">
+                  <a href="">Fast Food</a>
+                </li>
+              </ul>
+            </li>
+            <li class="relative group">
+              <a
+                href=""
+                class="before:content-[''] relative before:border-black before:absolute before:z-50 before:top-[10px] before:right-[-20px] before:h-[10px] before:w-[10px] before:border-b-2 before:border-l-2 before:rotate-[315deg] before:translate-[-50%]"
+                >Pages</a
+              >
+              <ul
+                class="min-w-[160px] absolute top-[18px] bg-white leading-14 px-3 hidden group-hover:block"
+              >
+                <li class="hover:bg-gray-300 block"><a href="">Drinks</a></li>
+                <li class="hover:bg-gray-300 block">
+                  <a href="">Fast Food</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="">contact Us</a></li>
+          </ul>
+        </div>
+        <div class="h-full w-full flex justify-between items-center px-3.5">
+          <button
+            id="btn-left"
+            class="h-14 w-14 shadow-2xs shadow-white bg-gray-300 rounded-full text-white"
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button
+            id="btn-right"
+            class="w-14 h-14 bg-gray-300 shadow-2xl rounded-full text-white"
+          >
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <!-- hero text -->
+        <div
+          id="div1"
+          class="h-full w-full absolute top-0 left-0 flex justify-start px-14 items-center"
+        >
+          <div class="w-1/2 text-center px-3.5">
+            <h1 class="uppercase text-2xl font-black">Welcome</h1>
+            <h2 class="text-3xl font-bold">Coffee House</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur, quos! Cum quo officia nihil enim aliquam,
+            </p>
+          </div>
+        </div>
+        <!--  -->
+        <!-- function callback -->
+        <!-- tenary operator let result = name=="Ali"?"Hamid":"Ali"; -->
+      </div>
+      <!-- hero section ended -->
+      <!-- about us -->
+      <div class="w-[80%] mx-auto py-2.5">
+        <h1
+          class="text-center before:content-[''] before:w-[100px] before:h-px before:absolute before:bg-black before:top-4 before:z-50 before:left-[100px] after:content-[''] after:w-[100px] after:h-px relative after:absolute after:bg-black after:top-4 after:z-50 after:right-32"
+        >
+          About US
+        </h1>
+        <p class="text-center">
+          Welcome to the coffee house we wish a happy time for you
+        </p>
+        <div class="grid grid-rows-1 grid-cols-2 gap-3.5 font-light">
+          <div class="grid grid-cols-6 grid-rows-2 gap-1">
+            <img class="col-span-3" src="../assets/images/a1.jpg" alt="" />
+            <img class="col-span-3" src="../assets/images/a2.jpg" alt="" />
+            <img class="col-span-2" src="../assets/images/a3.jpg" alt="" />
+            <img class="col-span-2" src="../assets/images/a4.jpg" alt="" />
+            <img class="col-span-2" src="../assets/images/a5.jpg" alt="" />
+          </div>
+          <div class="">
+            <h1>Coffee</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Officiis, deleniti laboriosam fugit deserunt eos suscipit
+              provident consectetur maiores quia dolorem non accusantium
+              inventore nisi vero ipsum reprehenderit nihil reiciendis totam!
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- about us end -->
+      <!-- start of our price -->
+      <div
+        class="h-screen w-full bg-[url(../assets/images/bg3.jpg)] bg-black bg-cover bg-fixed"
+      >
+        <div>
+          <h1
+            class="text-center text-white before:content-[''] before:w-[100px] before:h-px before:absolute before:bg-white before:top-4 before:z-50 before:left-[100px] after:content-[''] after:w-[100px] after:h-px relative after:absolute after:bg-white after:top-4 after:z-50 after:right-32"
+          >
+            Our Price
+          </h1>
+          <p class="text-white text-center">
+            Spend Quality time with your friends here
+          </p>
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper" style="height: 400px">
+            <div
+              class="swiper-slide h-[500px] w-[200px] border-8 hover:bg-gray-600 hover:border-black transition-all duration-200 hover:text-white bg-white p-7"
+            >
+              <h1 class="text-xl font-light">Cup Cake</h1>
+              <img
+                class="float-right border-2 border-green-300"
+                src="../assets/images/p1.jpg"
+                alt=""
+              />
+              <h1 class="text-2xl font-bold">120AFG</h1>
+              <p class="font-light">Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div
+              class="swiper-slide h-[500px] w-[200px] border-8 hover:bg-gray-600 hover:border-black transition-all duration-200 hover:text-white bg-white p-7"
+            >
+              <h1 class="text-xl font-light">Cup Cake</h1>
+              <img
+                class="float-right border-2 border-green-300"
+                src="../assets/images/p1.jpg"
+                alt=""
+              />
+              <h1 class="text-2xl font-bold">120AFG</h1>
+              <p class="font-light">Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div
+              class="swiper-slide h-[500px] w-[200px] border-8 hover:bg-gray-600 hover:border-black transition-all duration-200 hover:text-white bg-white p-7"
+            >
+              <h1 class="text-xl font-light">Cup Cake</h1>
+              <img
+                class="float-right border-2 border-green-300"
+                src="../assets/images/p1.jpg"
+                alt=""
+              />
+              <h1 class="text-2xl font-bold">120AFG</h1>
+              <p class="font-light">Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "vertical",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        autoplay: {
+          delay: 3000,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+  </body>
+</html>
