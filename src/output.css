@@ -835,6 +835,13 @@
       content: var(--tw-content);
     }
   }
+  .before\:content-\[\'\\1F441\'\] {
+    &::before {
+      content: var(--tw-content);
+      --tw-content: '\1F441';
+      content: var(--tw-content);
+    }
+  }
   .before\:content-\[\'hi\'\] {
     &::before {
       content: var(--tw-content);
