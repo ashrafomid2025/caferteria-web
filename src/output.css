@@ -751,6 +751,13 @@
       color: var(--color-red-300);
     }
   }
+  .before\:content-\[\'\&\#12806\;\'\] {
+    &::before {
+      content: var(--tw-content);
+      --tw-content: '&#12806;';
+      content: var(--tw-content);
+    }
+  }
   .before\:content-\[\'\&\#120578\;\'\] {
     &::before {
       content: var(--tw-content);
