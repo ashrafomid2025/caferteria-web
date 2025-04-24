@@ -14,18 +14,18 @@ setInterval(()=>{
     index = (index+1) % imageLinks.length;
     if(index===1){
         div1.classList.add("justify-start");
-        div1.classList.remove("text-sky-400")
+        div1.classList.remove("text-green-500");
     }
     else if(index ==2 ){
         div1.classList.remove("justify-start");
         div1.classList.add("justify-end");
-        div1.classList.add("text-sky-400");
+        div1.classList.add("text-green-500");
     }
     else{
         div1.classList.remove("justify-start");
         div1.classList.remove("justify-end");
         div1.classList.add("justify-center");
-        div1.classList.remove("text-sky-400");
+        div1.classList.remove("text-green-500");
     }
    
 },6000);

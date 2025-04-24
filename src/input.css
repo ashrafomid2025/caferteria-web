@@ -4,3 +4,17 @@
 @theme {
   --font-kalam-regular: "Kalam", cursive;
 }
+@layer utilities {
+  .hero-lg-text-responsive {
+    @apply lg:w-1/2 lg:px-3.5;
+  }
+  .lg-about-us-responsive {
+    @apply lg:grid-rows-1 lg:grid-cols-2;
+  }
+  .lg-refeshment-responsive {
+    @apply lg:grid-rows-2 lg:grid-cols-4;
+  }
+  .md-refeshment-responsive {
+    @apply md:grid-rows-3 md:grid-cols-3;
+  }
+}

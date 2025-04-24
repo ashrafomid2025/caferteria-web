@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <script src="animation.js" defer></script>
     <link rel="stylesheet" href="../assets/lightbox.min.css" />
     <script src="../assets/lightbox-plus-jquery.min.js" defer></script>
     <link rel="stylesheet" href="../src/output.css" />
@@ -40,12 +41,7 @@
           md:768
           lg:1024
           -->
-          <div class="lg:hidden">
-            <i
-              class="hidden text-3xl absolute top-2.5 right-4 fas fa-bars"
-              id="bars"
-            ></i>
-          </div>
+          <i class="hidden fas fa-bars" id="bars"></i>
           <ul
             id="ul"
             class="lg:flex space-x-7 lg:items-center flex-col lg:flex-row lg:h-fit lg:bg-transparent lg:w-fit lg:text-black fixed top-0 right-0 justify-evenly items-center lg:static w-full h-screen bg-black text-white hidden uppercase"
@@ -67,7 +63,7 @@
                 >Blog
               </a>
               <ul
-                class="min-w-[160px] absolute top-[18px] text-black bg-white leading-14 px-3 hidden group-hover:block"
+                class="min-w-[160px] absolute top-[18px] text-black bg-white leading-14 hidden group-hover:block"
               >
                 <li class="hover:bg-gray-300 block"><a href="">Latest</a></li>
                 <li class="hover:bg-gray-300 block"><a href="">Oldest</a></li>
@@ -100,7 +96,7 @@
                 >Pages</a
               >
               <ul
-                class="min-w-[160px] absolute top-[18px] bg-white leading-14 px-3 hidden group-hover:block"
+                class="min-w-[160px] absolute top-[18px] bg-white leading-14 hidden group-hover:block"
               >
                 <li class="hover:bg-gray-300 block"><a href="">Drinks</a></li>
                 <li class="hover:bg-gray-300 block">
@@ -131,10 +127,10 @@
           id="div1"
           class="h-full w-full absolute top-0 left-0 flex justify-start px-14 items-center"
         >
-          <div class="w-[100%] lg:w-1/2 text-center px-1.5 lg:px-3.5">
-            <h1 class="uppercase lg:text-2xl text-3xl font-black">Welcome</h1>
-            <h2 class="lg:text-3xl text-4xl font-bold">Coffee House</h2>
-            <p class="text-xl lg:text-sm">
+          <div class="hero-lg-text-responsive w-[90%] text-center px-1">
+            <h1 class="uppercase text-2xl font-black">Welcome</h1>
+            <h2 class="text-3xl font-bold">Coffee House</h2>
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Aspernatur, quos! Cum quo officia nihil enim aliquam,
             </p>
@@ -148,7 +144,7 @@
       <!-- about us -->
       <div class="lg:w-[80%] w-[90%] mx-auto py-2.5">
         <h1
-          class="text-center before:content-[''] before:w-[100px] before:h-px before:absolute before:bg-black before:top-4 before:z-50 before:left-[100px] after:content-[''] after:w-[100px] after:h-px relative after:absolute after:bg-black after:top-4 after:z-50 after:right-32"
+          class="text-center before:content-[''] lg:before:w-[100px] before:w-[50px] before:h-px before:absolute before:bg-black before:top-4 before:z-50 lg:before:left-[100px] before:left-4 after:content-[''] lg:after:w-[100px] after:w-[50px] after:h-px relative after:absolute after:bg-black after:top-4 after:z-50 lg:after:right-32 after:right-4"
         >
           About US
         </h1>
@@ -156,18 +152,16 @@
           Welcome to the coffee house we wish a happy time for you
         </p>
         <div
-          class="grid lg:grid-rows-1 lg:grid-cols-2 grid-cols-1 grid-rows-2 gap-1 font-light"
+          class="grid grid-rows-2 grid-cols-1 lg-about-us-responsive gap-2.5 font-light"
         >
-          <div
-            class="grid lg:grid-cols-6 row-span-2 lg:row-span-1 lg:grid-rows-2 grid-cols-2 grid-rows-3 lg:gap-1 mx-auto"
-          >
-            <img class="lg:col-span-3" src="../assets/images/a1.jpg" alt="" />
-            <img class="lg:col-span-3" src="../assets/images/a2.jpg" alt="" />
-            <img class="lg:col-span-2" src="../assets/images/a3.jpg" alt="" />
-            <img class="lg:col-span-2" src="../assets/images/a4.jpg" alt="" />
-            <img class="lg:col-span-2" src="../assets/images/a5.jpg" alt="" />
+          <div class="grid grid-cols-6 grid-rows-2 gap-1">
+            <img class="col-span-3" src="../assets/images/a1.jpg" alt="" />
+            <img class="col-span-3" src="../assets/images/a2.jpg" alt="" />
+            <img class="col-span-2" src="../assets/images/a3.jpg" alt="" />
+            <img class="col-span-2" src="../assets/images/a4.jpg" alt="" />
+            <img class="col-span-2" src="../assets/images/a5.jpg" alt="" />
           </div>
-          <div class="h-fit w-full">
+          <div class="md:h-fit row-span-1">
             <h1>Coffee</h1>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -181,7 +175,7 @@
       <!-- about us end -->
       <!-- start of our price -->
       <div
-        class="h-screen w-full bg-[url(../assets/images/bg3.jpg)] bg-black bg-cover bg-fixed py-[100px]"
+        class="lg:h-screen h-[40%] w-full bg-[url(../assets/images/bg3.jpg)] bg-black bg-cover bg-fixed py-[100px]"
       >
         <div>
           <h1
@@ -213,10 +207,10 @@
               <h1 class="text-xl font-light">Cup Cake</h1>
               <img
                 class="float-right border-2 border-green-300"
-                src="../assets/images/p1.jpg"
+                src="../assets/images/p2.jpg"
                 alt=""
               />
-              <h1 class="text-2xl font-bold">120AFG</h1>
+              <h1 class="text-2xl font-bold">300AFG</h1>
               <p class="font-light">Lorem ipsum dolor sit amet consectetur</p>
             </div>
             <div
@@ -225,10 +219,10 @@
               <h1 class="text-xl font-light">Cup Cake</h1>
               <img
                 class="float-right border-2 border-green-300"
-                src="../assets/images/p1.jpg"
+                src="../assets/images/p2.jpg"
                 alt=""
               />
-              <h1 class="text-2xl font-bold">120AFG</h1>
+              <h1 class="text-2xl font-bold">200AFG</h1>
               <p class="font-light">Lorem ipsum dolor sit amet consectetur</p>
             </div>
           </div>
@@ -242,17 +236,17 @@
       </div>
       <!-- ourprice finished -->
       <!-- refeshment start -->
-      <div class="w-[80%] mx-auto">
+      <div class="lg:w-[80%] w-[90%] mx-auto">
         <div class="text-center">
           <h1
-            class="text-center text-3xl font-bold before:content-[''] before:w-[100px] before:h-px before:absolute before:bg-black before:top-4 before:z-50 before:left-[80px] after:content-[''] after:w-[100px] after:h-px relative after:absolute after:bg-black after:top-4 after:z-50 after:right-20"
+            class="text-center text-3xl font-bold before:content-[''] lg:before:w-[100px] before:w-[30px] before:h-px before:absolute before:bg-black before:top-4 before:z-50 lg:before:left-[80px] before:left-2.5 after:content-[''] lg:after:w-[100px] after:w-[30px] after:h-px relative after:absolute after:bg-black after:top-4 after:z-50 lg:after:right-20 after:right-1.5"
           >
             Our Refeshment
           </h1>
           <p>Lorem, ipsum dolor sit amet consectetur</p>
         </div>
         <div
-          class="grid lg:grid-rows-2 lg:grid-cols-4 grid-rows-4 grid-cols-2 gap-2.5 text-center"
+          class="grid lg-refeshment-responsive md-refeshment-responsive grid-rows-4 grid-cols-2 gap-2.5 text-center"
         >
           <div
             class="before:content-['\1F441'] before:text-white before:w-full before:h-full relative before:absolute before:z-50 before:text-3xl before:top-[90%] before:left-[50%] before:translate-[-50%] before:hidden hover:before:opacity-100 hover:before:block"
@@ -345,6 +339,30 @@
           </div>
         </div>
       </div>
+      <!-- refeshement finished -->
+      <!-- counter started -->
+      <div class="h-[30vh] w-full flex justify-evenly items-center">
+        <div class="text-center lg:text-2xl md:text-xl text-sm">
+          <h1 data-target="35" class="mb-3">0</h1>
+          <h2>Different</h2>
+          <h2>Coffee Flavors</h2>
+        </div>
+        <div class="text-center lg:text-2xl md:text-xl text-sm">
+          <h1 data-target="24" class="mb-3">0</h1>
+          <h2>Branches</h2>
+          <h2>In country</h2>
+        </div>
+        <div class="text-center lg:text-2xl md:text-xl text-sm">
+          <h1 data-target="68" class="mb-3">0</h1>
+          <h2>Employee</h2>
+          <h2>In the Country</h2>
+        </div>
+        <div class="text-center lg:text-2xl md:text-xl text-sm">
+          <h1 data-target="52" class="mb-3">0</h1>
+          <h2>Different</h2>
+          <h2>Refeshment Foods</h2>
+        </div>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -360,7 +378,7 @@
         breakpoints: {
           640: {
             slidesPerView: 1,
-            spaceBetween: 40,
+            spaceBetween: 20,
           },
           768: {
             slidesPerView: 2,
